@@ -10,7 +10,7 @@ import java.util.List;
 
 import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Selenide.*;
-
+import static org.junit.Assert.assertTrue;
 /**
  * Created by Anton on 15.04.2016.
  */
