@@ -15,7 +15,7 @@ import static org.junit.Assert.assertTrue;
 /**
  * Created by Anton on 15.04.2016.
  */
-public class mediatechSteps {
+public class MediatechSteps {
 
     StartPage startPage =page(StartPage.class);
 
