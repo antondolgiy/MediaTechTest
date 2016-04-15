@@ -11,7 +11,7 @@ import static com.codeborne.selenide.Selenide.$;
 public class StartPage {
     public void search_input(String daString)
     {
-        Selenide.$(By.id("lst-ib")).setValue(daString);
+        $(By.id("lst-ib")).setValue(daString);
     }
     public void press_search_btn()
     {

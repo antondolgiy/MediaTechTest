@@ -32,6 +32,8 @@ public class MediatechSteps {
 
     @Given("^Type to search input \"([^\"]*)\"$")
     public void type_to_serch_input(String arg1)  {
+
+        //$(By.id("lst-ib")).setValue(arg1);
         startPage.search_input(arg1);
 
     }
