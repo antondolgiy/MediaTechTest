@@ -1,0 +1,11 @@
+Задание:
+Реализовать тесткейс на языке программирования java:
+Given Open page by url “https://www.google.ru” in browser
+GIven Type to serch input “adsterra”
+When Press button search
+Then Header search snippet “1” text equals “Adsterra”
+
+
+Использовались maven,cucumber,selenide
+для последнего шага сделал два варианта проверки (см.комменты в mediatechSteps) т.к. не был уверен,
+требуется-ли жесткий equals(тогда тест не пройдет) или просто частичное совпадение.
