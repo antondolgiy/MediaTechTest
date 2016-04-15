@@ -25,7 +25,9 @@ public class MediatechSteps {
     @Given("^Open page by url \"([^\"]*)\" in browser$")
     public void open_page_by_url_in_browser(String arg1)  {
 
+
         open(arg1,StartPage.class);
+
 
 
     }
@@ -41,8 +43,8 @@ public class MediatechSteps {
     @When("^Press button search$")
 
     public void press_button_search() throws Throwable {
-        //SelenideElement loupe_button=$(By.xpath(".//*[@id='sblsbb']/button"));
-        //loupe_button.click();
+
+        //$(By.xpath(".//*[@id='sblsbb']/button")).click();
         startPage.press_search_btn();
 
 
