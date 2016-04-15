@@ -10,6 +10,7 @@ import java.util.List;
 
 import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Selenide.*;
+import static org.junit.Assert.assertTrue;
 
 /**
  * Created by Anton on 15.04.2016.
@@ -37,8 +38,9 @@ public class mediatechSteps {
 
     @When("^Press button search$")
     public void press_button_search() throws Throwable {
-        SelenideElement loupe_button=$(By.xpath(".//*[@id='sblsbb']/button"));
-        loupe_button.click();
+        //SelenideElement loupe_button=$(By.xpath(".//*[@id='sblsbb']/button"));
+        //loupe_button.click();
+        startPage.press_search_btn();
 
     }
 
@@ -49,14 +51,16 @@ public class mediatechSteps {
 
         SelenideElement element =result.get(Integer.parseInt(arg1)-1);
         System.out.println(element.getText());
+        System.out.println(element.getText());
 
-        //Я не уыерен требуется-ли именно проверка эквивалентности,поэтому два варианта проверки:
+        //Я не уверен требуется-ли именно проверка эквивалентности,поэтому два варианта проверки:
 
-        //1) если проверка именнно на жёсткое соответствие заданного и фактического текстов заголовков,то закоменченная строка:
-        // assertTrue("doesn't match",arg2.equals(element.getText()));
-
-        // 2)если проверка на наличие заданного текста в фактическом,то:
+        // 1)если проверка на наличие заданного текста в фактическом,то:
         element.shouldHave(text(arg2));
+        //2)если проверка на эквивалентность заданного и фактического текстов заголовка,то:
+        assertTrue("doesn't match",arg2.equals(element.getText()));
+
+
 
 
 

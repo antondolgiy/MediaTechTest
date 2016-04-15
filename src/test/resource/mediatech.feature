@@ -1,4 +1,6 @@
-Feature: Check that header eqwls smthng
+Feature: Check that defined header eqwls sometext
+
+
 
   Scenario:  test
     Given Open page by url "https://www.google.ru" in browser
