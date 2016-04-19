@@ -57,8 +57,7 @@ public class MediatechSteps {
 
         SelenideElement element =result.get(Integer.parseInt(arg1)-1);
 
-        System.out.println(element.getText());
-        System.out.println(element.getText());
+    
 
         //Я не уверен требуется-ли именно проверка эквивалентности,поэтому  указал оба возможных варианта проверки:
         // 1)если проверка на наличие заданного текста в фактическом,то:
